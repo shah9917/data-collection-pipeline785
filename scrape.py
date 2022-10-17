@@ -1,7 +1,9 @@
-from selenium import webdriver
+from selenium.webdriver import Chrome
+from webdriver_manager.chrome import ChromeDriverManager
 import time 
 
-driver = webdriver.Chrome('./chromedriver')
+
+driver = Chrome(ChromeDriverManager().install())
 #driver.get("https://uk.trustpilot.com/")
 
 class Scraper:
